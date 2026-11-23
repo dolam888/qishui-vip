@@ -16,11 +16,17 @@
 
 ```
 .
-├── __init__.py          # 主脚本（AScript 工程约定，入口文件名必须是这个）
+├── __init__.py          # 安卓版主脚本（AScript 工程约定，入口文件名必须是这个）
 ├── res/img/             # 模板图（启动图标、直播间关闭按钮等）
+├── ios-original/        # iOS 原版代码备份，仅作对照，勿直接使用
+│   ├── __init__.py
+│   ├── README-原版.md
+│   └── 来源说明.md       # 出处、作者、对应提交
 ├── .vscode/settings.json
 └── .gitignore
 ```
+
+`ios-original/` 里的代码只写了 `ascript.ios.*` 接口，依赖 iPhone 的 WebDriverAgent，Windows 和安卓都跑不起来，仅用于 diff 对照（版权归原作者 wei6718189，详见该目录的 `来源说明.md`）。
 
 ## 安装到手机
 
